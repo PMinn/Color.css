@@ -4,9 +4,8 @@
 
 ## Table of contents
   - [Usage](#usage)
-  - [Japanese Traditional Colors](#japanese-traditional-colors)
-
----
+  - [Types of colors](#types-of-colors)
+    - [Japanese Traditional Colors](#japanese-traditional-colors)
 
 ## Usage
 Use CSS variables `var(--${colorName})` 
@@ -14,7 +13,8 @@ Use CSS variables `var(--${colorName})`
 <div style="width:50px;height:50px;background-color:var(--NADESHIKO);"></div>
 ```
 
-## Japanese Traditional Colors
+## Types of colors
+### <em>Japanese Traditional Colors</em>
 Include Japanese Traditional Colors cdn in your website like this:
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color/JapaneseTraditionalColors.min.css">
