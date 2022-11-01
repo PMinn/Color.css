@@ -1,7 +1,12 @@
 <p align="center">
-    <img src="https://github.com/PMinn/Color/raw/main/image/Logo.svg">
-    <h1>Color</h1>
+    <img src="https://github.com/PMinn/Color/raw/main/image/Logo.svg" style="width:40%;">
 </p>
+<h3 align="center">Color</h3>
+<p align="center">
+  Sleek, and intuitive front-end CSS for faster and easier web development.
+</p>
+
+<br>
 
 ## Table of contents
   - [Usage](#usage)
