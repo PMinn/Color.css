@@ -1,5 +1,6 @@
 <p align="center">
-  <h1>Color</h1>
+    <img src="https://github.com/PMinn/Color/raw/main/image/Logo.svg">
+    <h1>Color</h1>
 </p>
 
 ## Table of contents
