@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color.css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/JapaneseTraditionalColors.min.css">
+    <style>
+        body {
+            background-color: var(--KACHI);
+            color: rgb(139, 148, 158);
+        }
+
+        .navbar {
+            background-color: var(--KUROTSURUBAMI);
+            color: #fff;
+        }
+
+        .navbar-brand {
+            width: 100px;
+        }
+
+        .title {
+            color: rgb(201, 209, 217);
+            /* text-align: center; */
+        }
+
+        code span {
+            font-size: 0;
+        }
+
+        .color {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+        }
+
+        #table tr {
+            height: 60px;
+        }
+
+        #table td {
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Color.css</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./get-started.html">Get started</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Colors
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./morandi.html">Morandi Colors</a>
+                        <a class="dropdown-item" href="./japanese-traditional.html">Japanese Traditional Colors</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5 px-3 pt-3">
+        <h2 class="title">Morandi Colors</h2>
+        <ol>
+            <li>
+                Include Morandi Colors cdn in your website like this:
+                <br>
+                <code>
+                    <<span></span>link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color.css/src/MorandiColors.min.css">
+                </code>
+            </li>
+            <li>
+                find the color you need
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Color</th>
+                            <th>Hex</th>
+                            <th>ColorName</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table"></tbody>
+                </table>
+            </li>
+            <li>
+                Use it:
+                <br>
+                like:
+                <br>
+                <code>
+                    <<span></span>div style="width:50px;height:50px;background-color:var(--NADESHIKO);"> 
+                </code>
+                <br>
+                or
+                <br>
+                <code>
+                    .dom {
+                        <br>
+                            background-color: var(--NADESHIKO);
+                        <br>
+                    }
+                </code>
+            </li>
+        </ol>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        const table = document.getElementById('table');
+        fetch('./MorandiColors.json')
+            .then(response => response.json())
+            .then(response => {
+                response.forEach(colorData => {
+                    var color = document.createElement('div');
+                    color.classList.add('color');
+                    color.style.backgroundColor = colorData.color;
+                    var colorTd = document.createElement('td');
+                    colorTd.appendChild(color);
+                    var hexTd = document.createElement('td');
+                    hexTd.innerText = colorData.color;
+                    var colorNameTd = document.createElement('td');
+                    colorNameTd.innerText = colorData.name.en;
+                    var tr = document.createElement('tr');
+                    tr.appendChild(colorTd);
+                    tr.appendChild(hexTd);
+                    tr.appendChild(colorNameTd);
+                    table.appendChild(tr);
+                });
+                console.log(response);
+            })
+    </script>
+</body>
+
+</html>

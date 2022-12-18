@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const inputJSONFile = '../MorandiColor.json'
-const outputCSSFile = '../MorandiColor.min.css';
+const outputCSSFile = '../src/MorandiColor.min.css';
 
 var css = ':root{';
 

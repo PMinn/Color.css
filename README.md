@@ -1,7 +1,7 @@
 <p align="center">
     <img src="https://github.com/PMinn/Color/raw/main/image/Logo.svg" style="width:40%;">
 </p>
-<h3 align="center">Color</h3>
+<h3 align="center">Color.css</h3>
 <p align="center">
   Sleek, and intuitive front-end CSS for faster and easier web development.
 </p>
@@ -9,10 +9,11 @@
 <br>
 
 ## Table of contents
-  - [Usage](#usage)
-  - [Types of colors](#types-of-colors)
-    - [Morandi Colors](#morandi-colors)
-    - [Japanese Traditional Colors](#japanese-traditional-colors)
+- [Table of contents](#table-of-contents)
+- [Usage](#usage)
+- [Types of colors](#types-of-colors)
+  - [Morandi Colors](#morandi-colors)
+  - [Japanese Traditional Colors](#japanese-traditional-colors)
 
 ## Usage
 Use CSS variables `var(--{ColorName})` 
@@ -24,7 +25,7 @@ Use CSS variables `var(--{ColorName})`
 ### <em>Morandi Colors</em>
 Include Morandi Colors cdn in your website like this:
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color/MorandiColors.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color.css/src/MorandiColors.min.css">
 ```
 find the color you need, and use like [Usage](#usage)
 <table>
@@ -118,9 +119,10 @@ find the color you need, and use like [Usage](#usage)
 </table>
 
 ### <em>Japanese Traditional Colors</em>
+colors from [nipponcolors](https://nipponcolors.com/)
 Include Japanese Traditional Colors cdn in your website like this:
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color/JapaneseTraditionalColors.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color.css/src/JapaneseTraditionalColors.min.css">
 ```
 find the color you need, and use like [Usage](#usage)
 
