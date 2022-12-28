@@ -1,7 +1,8 @@
 [
     {
-        "id": "Morandi",
+        "id": "morandi",
         "name": "Morandi",
+        "isImageRendered": true,
         "data": [
             {
                 "color": "#EBE8E1",
@@ -102,8 +103,9 @@
         ]
     },
     {
-        "id": "Japanese-Traditional",
+        "id": "japanese-traditional",
         "name": "Japanese Traditional",
+        "isImageRendered": true,
         "data": [
             {
                 "color": "rgb(220, 159, 180)",
