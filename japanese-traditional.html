@@ -1,150 +1,3128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color.css</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/JapaneseTraditionalColors.min.css">
-    <style>
-        body {
-            background-color: var(--KACHI);
-            color: rgb(139, 148, 158);
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Traditional Color | Color.css</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/Japanese-Traditional.css">
+  <style>
+    body {
+      background-color: var(--KACHI);
+      color: rgb(139, 148, 158);
+    }
 
-        .navbar {
-            background-color: var(--KUROTSURUBAMI);
-            color: #fff;
-        }
+    .navbar {
+      background-color: var(--KUROTSURUBAMI);
+      color: #fff;
+    }
 
-        .navbar-brand {
-            width: 100px;
-        }
+    .navbar-brand {
+      width: 100px;
+    }
 
-        .title {
-            color: rgb(201, 209, 217);
-            /* text-align: center; */
-        }
+    .title {
+      color: rgb(201, 209, 217);
+      /* text-align: center; */
+    }
 
-        code span {
-            font-size: 0;
-        }
+    code span {
+      font-size: 0;
+    }
 
-        .color {
-            width: 50px;
-            height: 50px;
-            border-radius: 100px;
-        }
+    .color {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+    }
 
-        #table tr {
-            height: 60px;
-        }
+    #table tr {
+      height: 60px;
+    }
 
-        #table td {
-            width: 33%;
-        }
-    </style>
+    #table td {
+      width: 33%;
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/">Color.css</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="/">Color.css</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./get-started.html">Get started</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Colors
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./morandi.html">Morandi Colors</a>
-                        <a class="dropdown-item" href="./japanese-traditional.html">Japanese Traditional Colors</a>
-                    </div>
-                </li>
-            </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./get-started.html">Get started</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Colors
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
+          <a class="dropdown-item" href="./Morandi.html">Morandi Colors</a>
+          
+          <a class="dropdown-item" href="./Japanese-Traditional.html">Japanese Traditional Colors</a>
+          
         </div>
-    </nav>
-
-    <div class="container-fluid mt-5 px-3 pt-3">
-        <h2 class="title">Japanese Traditional Colors</h2>
-        <ol>
-            <li>
-                Include Japanese Traditional Colors cdn in your website like this:
-                <br>
-                <code>
-                    <<span></span>link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color.css/src/JapaneseTraditionalColors.min.css">
-                </code>
-            </li>
-            <li>
-                find the color you need
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Color</th>
-                            <th>Hex</th>
-                            <th>ColorName</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table"></tbody>
-                </table>
-            </li>
-            <li>
-                Use it:
-                <br>
-                like:
-                <br>
-                <code>
-                    <<span></span>div style="width:50px;height:50px;background-color:var(--NADESHIKO);"> 
-                </code>
-                <br>
-                or
-                <br>
-                <code>
-                    .dom {
-                        <br>
-                            background-color: var(--NADESHIKO);
-                        <br>
-                    }
-                </code>
-            </li>
-        </ol>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
-    <script>
-        // const table = document.getElementById('table');
-        // fetch('./MorandiColors.json')
-        //     .then(response => response.json())
-        //     .then(response => {
-        //         response.forEach(colorData => {
-        //             var color = document.createElement('div');
-        //             color.classList.add('color');
-        //             color.style.backgroundColor = colorData.color;
-        //             var colorTd = document.createElement('td');
-        //             colorTd.appendChild(color);
-        //             var hexTd = document.createElement('td');
-        //             hexTd.innerText = colorData.color;
-        //             var colorNameTd = document.createElement('td');
-        //             colorNameTd.innerText = colorData.name.en;
-        //             var tr = document.createElement('tr');
-        //             tr.appendChild(colorTd);
-        //             tr.appendChild(hexTd);
-        //             tr.appendChild(colorNameTd);
-        //             table.appendChild(tr);
-        //         });
-        //         console.log(response);
-        //     })
-    </script>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <div class="container-fluid mt-5 px-3 pt-3">
+    <h2 class="title">Japanese-Traditional Colors</h2>
+    <ol>
+      <li>
+        Include Japanese-Traditional Colors cdn in your website like this:
+        <br>
+        <code>
+          <<span></span>link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color.css/src/Japanese-Traditional.css">
+        </code>
+      </li>
+      <li>
+        find the color you need
+        <table>
+          <thead>
+            <tr>
+              <th>Color</th>
+              <th>Hex</th>
+              <th>ColorName</th>
+            </tr>
+          </thead>
+          <tbody id="table">
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(220, 159, 180)"></div>
+              </td>
+              <td>
+                rgb(220, 159, 180)
+              </td>
+              <td>
+                NADESHIKO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(225, 107, 140)"></div>
+              </td>
+              <td>
+                rgb(225, 107, 140)
+              </td>
+              <td>
+                KOHBAI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(142, 53, 74)"></div>
+              </td>
+              <td>
+                rgb(142, 53, 74)
+              </td>
+              <td>
+                SUOH
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(248, 195, 205)"></div>
+              </td>
+              <td>
+                rgb(248, 195, 205)
+              </td>
+              <td>
+                TAIKOH
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(244, 167, 185)"></div>
+              </td>
+              <td>
+                rgb(244, 167, 185)
+              </td>
+              <td>
+                IKKONZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(100, 54, 60)"></div>
+              </td>
+              <td>
+                rgb(100, 54, 60)
+              </td>
+              <td>
+                KUWAZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(245, 150, 170)"></div>
+              </td>
+              <td>
+                rgb(245, 150, 170)
+              </td>
+              <td>
+                MOMO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(181, 73, 91)"></div>
+              </td>
+              <td>
+                rgb(181, 73, 91)
+              </td>
+              <td>
+                ICHIGO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(232, 122, 144)"></div>
+              </td>
+              <td>
+                rgb(232, 122, 144)
+              </td>
+              <td>
+                USUBENI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(208, 90, 110)"></div>
+              </td>
+              <td>
+                rgb(208, 90, 110)
+              </td>
+              <td>
+                IMAYOH
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(219, 77, 109)"></div>
+              </td>
+              <td>
+                rgb(219, 77, 109)
+              </td>
+              <td>
+                NAKABENI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(254, 223, 225)"></div>
+              </td>
+              <td>
+                rgb(254, 223, 225)
+              </td>
+              <td>
+                SAKURA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(158, 122, 122)"></div>
+              </td>
+              <td>
+                rgb(158, 122, 122)
+              </td>
+              <td>
+                UMENEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(208, 16, 76)"></div>
+              </td>
+              <td>
+                rgb(208, 16, 76)
+              </td>
+              <td>
+                KARAKURENAI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(159, 53, 58)"></div>
+              </td>
+              <td>
+                rgb(159, 53, 58)
+              </td>
+              <td>
+                ENJI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(203, 27, 69)"></div>
+              </td>
+              <td>
+                rgb(203, 27, 69)
+              </td>
+              <td>
+                KURENAI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(238, 169, 169)"></div>
+              </td>
+              <td>
+                rgb(238, 169, 169)
+              </td>
+              <td>
+                TOKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(191, 103, 102)"></div>
+              </td>
+              <td>
+                rgb(191, 103, 102)
+              </td>
+              <td>
+                CYOHSYUN
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(134, 71, 63)"></div>
+              </td>
+              <td>
+                rgb(134, 71, 63)
+              </td>
+              <td>
+                KOKIAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(177, 150, 147)"></div>
+              </td>
+              <td>
+                rgb(177, 150, 147)
+              </td>
+              <td>
+                SAKURANEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(235, 122, 119)"></div>
+              </td>
+              <td>
+                rgb(235, 122, 119)
+              </td>
+              <td>
+                JINZAMOMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(149, 74, 69)"></div>
+              </td>
+              <td>
+                rgb(149, 74, 69)
+              </td>
+              <td>
+                AZUKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(169, 99, 96)"></div>
+              </td>
+              <td>
+                rgb(169, 99, 96)
+              </td>
+              <td>
+                SUOHKOH
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(203, 64, 66)"></div>
+              </td>
+              <td>
+                rgb(203, 64, 66)
+              </td>
+              <td>
+                AKABENI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(171, 59, 58)"></div>
+              </td>
+              <td>
+                rgb(171, 59, 58)
+              </td>
+              <td>
+                SHINSYU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(215, 196, 187)"></div>
+              </td>
+              <td>
+                rgb(215, 196, 187)
+              </td>
+              <td>
+                HAIZAKURA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(144, 72, 64)"></div>
+              </td>
+              <td>
+                rgb(144, 72, 64)
+              </td>
+              <td>
+                KURIUME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(115, 67, 56)"></div>
+              </td>
+              <td>
+                rgb(115, 67, 56)
+              </td>
+              <td>
+                EBICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(199, 62, 58)"></div>
+              </td>
+              <td>
+                rgb(199, 62, 58)
+              </td>
+              <td>
+                GINSYU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(85, 66, 54)"></div>
+              </td>
+              <td>
+                rgb(85, 66, 54)
+              </td>
+              <td>
+                KUROTOBI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(153, 70, 57)"></div>
+              </td>
+              <td>
+                rgb(153, 70, 57)
+              </td>
+              <td>
+                BENITOBI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(241, 148, 131)"></div>
+              </td>
+              <td>
+                rgb(241, 148, 131)
+              </td>
+              <td>
+                AKEBONO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(181, 68, 52)"></div>
+              </td>
+              <td>
+                rgb(181, 68, 52)
+              </td>
+              <td>
+                BENIKABA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(185, 136, 125)"></div>
+              </td>
+              <td>
+                rgb(185, 136, 125)
+              </td>
+              <td>
+                MIZUGAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(241, 124, 103)"></div>
+              </td>
+              <td>
+                rgb(241, 124, 103)
+              </td>
+              <td>
+                SANGOSYU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(136, 76, 58)"></div>
+              </td>
+              <td>
+                rgb(136, 76, 58)
+              </td>
+              <td>
+                BENIHIWADA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(232, 48, 21)"></div>
+              </td>
+              <td>
+                rgb(232, 48, 21)
+              </td>
+              <td>
+                SYOJYOHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(215, 84, 85)"></div>
+              </td>
+              <td>
+                rgb(215, 84, 85)
+              </td>
+              <td>
+                ENTAN
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(181, 93, 76)"></div>
+              </td>
+              <td>
+                rgb(181, 93, 76)
+              </td>
+              <td>
+                SHIKANCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(133, 72, 54)"></div>
+              </td>
+              <td>
+                rgb(133, 72, 54)
+              </td>
+              <td>
+                HIWADA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(163, 94, 71)"></div>
+              </td>
+              <td>
+                rgb(163, 94, 71)
+              </td>
+              <td>
+                KAKISHIBU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(204, 84, 58)"></div>
+              </td>
+              <td>
+                rgb(204, 84, 58)
+              </td>
+              <td>
+                AKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(114, 72, 50)"></div>
+              </td>
+              <td>
+                rgb(114, 72, 50)
+              </td>
+              <td>
+                TOBI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(247, 92, 47)"></div>
+              </td>
+              <td>
+                rgb(247, 92, 47)
+              </td>
+              <td>
+                BENIHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(106, 64, 40)"></div>
+              </td>
+              <td>
+                rgb(106, 64, 40)
+              </td>
+              <td>
+                KURIKAWACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(154, 80, 52)"></div>
+              </td>
+              <td>
+                rgb(154, 80, 52)
+              </td>
+              <td>
+                BENGARA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(196, 98, 67)"></div>
+              </td>
+              <td>
+                rgb(196, 98, 67)
+              </td>
+              <td>
+                TERIGAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(175, 95, 60)"></div>
+              </td>
+              <td>
+                rgb(175, 95, 60)
+              </td>
+              <td>
+                EDOCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(251, 150, 110)"></div>
+              </td>
+              <td>
+                rgb(251, 150, 110)
+              </td>
+              <td>
+                ARAISYU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(114, 73, 56)"></div>
+              </td>
+              <td>
+                rgb(114, 73, 56)
+              </td>
+              <td>
+                MOMOSHIOCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(180, 113, 87)"></div>
+              </td>
+              <td>
+                rgb(180, 113, 87)
+              </td>
+              <td>
+                KARACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(219, 142, 113)"></div>
+              </td>
+              <td>
+                rgb(219, 142, 113)
+              </td>
+              <td>
+                TOKIGARACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(240, 94, 28)"></div>
+              </td>
+              <td>
+                rgb(240, 94, 28)
+              </td>
+              <td>
+                OHNI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(237, 120, 74)"></div>
+              </td>
+              <td>
+                rgb(237, 120, 74)
+              </td>
+              <td>
+                SOHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(202, 120, 83)"></div>
+              </td>
+              <td>
+                rgb(202, 120, 83)
+              </td>
+              <td>
+                ENSYUCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(179, 92, 55)"></div>
+              </td>
+              <td>
+                rgb(179, 92, 55)
+              </td>
+              <td>
+                KABACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(86, 63, 46)"></div>
+              </td>
+              <td>
+                rgb(86, 63, 46)
+              </td>
+              <td>
+                KOGECHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(227, 145, 110)"></div>
+              </td>
+              <td>
+                rgb(227, 145, 110)
+              </td>
+              <td>
+                AKAKOH
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(143, 90, 60)"></div>
+              </td>
+              <td>
+                rgb(143, 90, 60)
+              </td>
+              <td>
+                SUZUMECHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(240, 169, 134)"></div>
+              </td>
+              <td>
+                rgb(240, 169, 134)
+              </td>
+              <td>
+                SHISHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(160, 103, 75)"></div>
+              </td>
+              <td>
+                rgb(160, 103, 75)
+              </td>
+              <td>
+                SODENKARACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(193, 105, 60)"></div>
+              </td>
+              <td>
+                rgb(193, 105, 60)
+              </td>
+              <td>
+                KABA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(251, 153, 102)"></div>
+              </td>
+              <td>
+                rgb(251, 153, 102)
+              </td>
+              <td>
+                KOKIKUCHINASHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(148, 122, 109)"></div>
+              </td>
+              <td>
+                rgb(148, 122, 109)
+              </td>
+              <td>
+                KURUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(163, 99, 54)"></div>
+              </td>
+              <td>
+                rgb(163, 99, 54)
+              </td>
+              <td>
+                TAISYA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(231, 148, 96)"></div>
+              </td>
+              <td>
+                rgb(231, 148, 96)
+              </td>
+              <td>
+                ARAIGAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(125, 83, 44)"></div>
+              </td>
+              <td>
+                rgb(125, 83, 44)
+              </td>
+              <td>
+                KOHROZEN
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(199, 133, 80)"></div>
+              </td>
+              <td>
+                rgb(199, 133, 80)
+              </td>
+              <td>
+                AKAKUCHIBA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(152, 95, 42)"></div>
+              </td>
+              <td>
+                rgb(152, 95, 42)
+              </td>
+              <td>
+                TONOCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(225, 166, 121)"></div>
+              </td>
+              <td>
+                rgb(225, 166, 121)
+              </td>
+              <td>
+                AKASHIROTSURUBAMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(133, 91, 50)"></div>
+              </td>
+              <td>
+                rgb(133, 91, 50)
+              </td>
+              <td>
+                SENCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(252, 159, 77)"></div>
+              </td>
+              <td>
+                rgb(252, 159, 77)
+              </td>
+              <td>
+                KANZO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(255, 186, 132)"></div>
+              </td>
+              <td>
+                rgb(255, 186, 132)
+              </td>
+              <td>
+                SHAREGAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(233, 139, 42)"></div>
+              </td>
+              <td>
+                rgb(233, 139, 42)
+              </td>
+              <td>
+                BENIUKON
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(233, 163, 104)"></div>
+              </td>
+              <td>
+                rgb(233, 163, 104)
+              </td>
+              <td>
+                UMEZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(177, 120, 68)"></div>
+              </td>
+              <td>
+                rgb(177, 120, 68)
+              </td>
+              <td>
+                BIWACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(150, 99, 46)"></div>
+              </td>
+              <td>
+                rgb(150, 99, 46)
+              </td>
+              <td>
+                CHOJICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(67, 52, 27)"></div>
+              </td>
+              <td>
+                rgb(67, 52, 27)
+              </td>
+              <td>
+                KENPOHZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(202, 122, 44)"></div>
+              </td>
+              <td>
+                rgb(202, 122, 44)
+              </td>
+              <td>
+                KOHAKU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(236, 184, 138)"></div>
+              </td>
+              <td>
+                rgb(236, 184, 138)
+              </td>
+              <td>
+                USUGAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(120, 85, 43)"></div>
+              </td>
+              <td>
+                rgb(120, 85, 43)
+              </td>
+              <td>
+                KYARA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(176, 119, 54)"></div>
+              </td>
+              <td>
+                rgb(176, 119, 54)
+              </td>
+              <td>
+                CHOJIZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(150, 114, 73)"></div>
+              </td>
+              <td>
+                rgb(150, 114, 73)
+              </td>
+              <td>
+                FUSHIZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(226, 148, 59)"></div>
+              </td>
+              <td>
+                rgb(226, 148, 59)
+              </td>
+              <td>
+                KUCHIBA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(199, 128, 45)"></div>
+              </td>
+              <td>
+                rgb(199, 128, 45)
+              </td>
+              <td>
+                KINCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(155, 110, 35)"></div>
+              </td>
+              <td>
+                rgb(155, 110, 35)
+              </td>
+              <td>
+                KITSUNE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(110, 85, 47)"></div>
+              </td>
+              <td>
+                rgb(110, 85, 47)
+              </td>
+              <td>
+                SUSUTAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(235, 180, 113)"></div>
+              </td>
+              <td>
+                rgb(235, 180, 113)
+              </td>
+              <td>
+                USUKOH
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(215, 185, 142)"></div>
+              </td>
+              <td>
+                rgb(215, 185, 142)
+              </td>
+              <td>
+                TONOKO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(130, 102, 58)"></div>
+              </td>
+              <td>
+                rgb(130, 102, 58)
+              </td>
+              <td>
+                GINSUSUTAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(182, 142, 85)"></div>
+              </td>
+              <td>
+                rgb(182, 142, 85)
+              </td>
+              <td>
+                OHDO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(188, 159, 119)"></div>
+              </td>
+              <td>
+                rgb(188, 159, 119)
+              </td>
+              <td>
+                SHIRACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(135, 102, 51)"></div>
+              </td>
+              <td>
+                rgb(135, 102, 51)
+              </td>
+              <td>
+                KOBICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(193, 138, 38)"></div>
+              </td>
+              <td>
+                rgb(193, 138, 38)
+              </td>
+              <td>
+                KIGARACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(255, 177, 27)"></div>
+              </td>
+              <td>
+                rgb(255, 177, 27)
+              </td>
+              <td>
+                YAMABUKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(209, 152, 38)"></div>
+              </td>
+              <td>
+                rgb(209, 152, 38)
+              </td>
+              <td>
+                YAMABUKICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(221, 165, 45)"></div>
+              </td>
+              <td>
+                rgb(221, 165, 45)
+              </td>
+              <td>
+                HAJIZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(201, 152, 51)"></div>
+              </td>
+              <td>
+                rgb(201, 152, 51)
+              </td>
+              <td>
+                KUWACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(249, 191, 69)"></div>
+              </td>
+              <td>
+                rgb(249, 191, 69)
+              </td>
+              <td>
+                TAMAGO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(220, 184, 121)"></div>
+              </td>
+              <td>
+                rgb(220, 184, 121)
+              </td>
+              <td>
+                SHIROTSURUBAMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(186, 145, 50)"></div>
+              </td>
+              <td>
+                rgb(186, 145, 50)
+              </td>
+              <td>
+                KITSURUBAMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(232, 182, 71)"></div>
+              </td>
+              <td>
+                rgb(232, 182, 71)
+              </td>
+              <td>
+                TAMAMOROKOSHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(247, 194, 66)"></div>
+              </td>
+              <td>
+                rgb(247, 194, 66)
+              </td>
+              <td>
+                HANABA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(125, 108, 70)"></div>
+              </td>
+              <td>
+                rgb(125, 108, 70)
+              </td>
+              <td>
+                NAMAKABE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(218, 201, 166)"></div>
+              </td>
+              <td>
+                rgb(218, 201, 166)
+              </td>
+              <td>
+                TORINOKO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(250, 214, 137)"></div>
+              </td>
+              <td>
+                rgb(250, 214, 137)
+              </td>
+              <td>
+                USUKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(217, 171, 66)"></div>
+              </td>
+              <td>
+                rgb(217, 171, 66)
+              </td>
+              <td>
+                KIKUCHIBA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(246, 197, 85)"></div>
+              </td>
+              <td>
+                rgb(246, 197, 85)
+              </td>
+              <td>
+                KUCHINASHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(255, 196, 8)"></div>
+              </td>
+              <td>
+                rgb(255, 196, 8)
+              </td>
+              <td>
+                TOHOH
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(239, 187, 36)"></div>
+              </td>
+              <td>
+                rgb(239, 187, 36)
+              </td>
+              <td>
+                UKON
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(202, 173, 95)"></div>
+              </td>
+              <td>
+                rgb(202, 173, 95)
+              </td>
+              <td>
+                KARASHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(141, 116, 42)"></div>
+              </td>
+              <td>
+                rgb(141, 116, 42)
+              </td>
+              <td>
+                HIGOSUSUTAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(180, 165, 130)"></div>
+              </td>
+              <td>
+                rgb(180, 165, 130)
+              </td>
+              <td>
+                RIKYUSHIRACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(135, 127, 108)"></div>
+              </td>
+              <td>
+                rgb(135, 127, 108)
+              </td>
+              <td>
+                AKU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(137, 125, 85)"></div>
+              </td>
+              <td>
+                rgb(137, 125, 85)
+              </td>
+              <td>
+                RIKYUCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(116, 103, 62)"></div>
+              </td>
+              <td>
+                rgb(116, 103, 62)
+              </td>
+              <td>
+                ROKOHCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(162, 140, 55)"></div>
+              </td>
+              <td>
+                rgb(162, 140, 55)
+              </td>
+              <td>
+                NATANEYU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(108, 96, 36)"></div>
+              </td>
+              <td>
+                rgb(108, 96, 36)
+              </td>
+              <td>
+                UGUISUCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(134, 120, 53)"></div>
+              </td>
+              <td>
+                rgb(134, 120, 53)
+              </td>
+              <td>
+                KIMIRUCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(98, 89, 44)"></div>
+              </td>
+              <td>
+                rgb(98, 89, 44)
+              </td>
+              <td>
+                MIRUCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(233, 205, 76)"></div>
+              </td>
+              <td>
+                rgb(233, 205, 76)
+              </td>
+              <td>
+                KARIYASU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(247, 217, 76)"></div>
+              </td>
+              <td>
+                rgb(247, 217, 76)
+              </td>
+              <td>
+                NANOHANA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(251, 226, 81)"></div>
+              </td>
+              <td>
+                rgb(251, 226, 81)
+              </td>
+              <td>
+                KIHADA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(217, 205, 144)"></div>
+              </td>
+              <td>
+                rgb(217, 205, 144)
+              </td>
+              <td>
+                MUSHIKURI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(173, 161, 66)"></div>
+              </td>
+              <td>
+                rgb(173, 161, 66)
+              </td>
+              <td>
+                AOKUCHIBA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(221, 210, 59)"></div>
+              </td>
+              <td>
+                rgb(221, 210, 59)
+              </td>
+              <td>
+                OMINAESHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(165, 160, 81)"></div>
+              </td>
+              <td>
+                rgb(165, 160, 81)
+              </td>
+              <td>
+                HIWACHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(190, 194, 63)"></div>
+              </td>
+              <td>
+                rgb(190, 194, 63)
+              </td>
+              <td>
+                HIWA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(108, 106, 45)"></div>
+              </td>
+              <td>
+                rgb(108, 106, 45)
+              </td>
+              <td>
+                UGUISU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(147, 150, 80)"></div>
+              </td>
+              <td>
+                rgb(147, 150, 80)
+              </td>
+              <td>
+                YANAGICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(131, 138, 45)"></div>
+              </td>
+              <td>
+                rgb(131, 138, 45)
+              </td>
+              <td>
+                KOKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(177, 180, 121)"></div>
+              </td>
+              <td>
+                rgb(177, 180, 121)
+              </td>
+              <td>
+                KIKUJIN
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(97, 97, 56)"></div>
+              </td>
+              <td>
+                rgb(97, 97, 56)
+              </td>
+              <td>
+                RIKANCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(75, 78, 42)"></div>
+              </td>
+              <td>
+                rgb(75, 78, 42)
+              </td>
+              <td>
+                AIKOBICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(91, 98, 46)"></div>
+              </td>
+              <td>
+                rgb(91, 98, 46)
+              </td>
+              <td>
+                MIRU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(77, 81, 57)"></div>
+              </td>
+              <td>
+                rgb(77, 81, 57)
+              </td>
+              <td>
+                SENSAICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(137, 145, 107)"></div>
+              </td>
+              <td>
+                rgb(137, 145, 107)
+              </td>
+              <td>
+                BAIKOCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(144, 180, 75)"></div>
+              </td>
+              <td>
+                rgb(144, 180, 75)
+              </td>
+              <td>
+                HIWAMOEGI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(145, 173, 112)"></div>
+              </td>
+              <td>
+                rgb(145, 173, 112)
+              </td>
+              <td>
+                YANAGIZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(181, 202, 160)"></div>
+              </td>
+              <td>
+                rgb(181, 202, 160)
+              </td>
+              <td>
+                URAYANAGI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(100, 106, 88)"></div>
+              </td>
+              <td>
+                rgb(100, 106, 88)
+              </td>
+              <td>
+                IWAICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(123, 162, 63)"></div>
+              </td>
+              <td>
+                rgb(123, 162, 63)
+              </td>
+              <td>
+                MOEGI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(134, 193, 102)"></div>
+              </td>
+              <td>
+                rgb(134, 193, 102)
+              </td>
+              <td>
+                NAE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(74, 89, 61)"></div>
+              </td>
+              <td>
+                rgb(74, 89, 61)
+              </td>
+              <td>
+                YANAGISUSUTAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(66, 96, 45)"></div>
+              </td>
+              <td>
+                rgb(66, 96, 45)
+              </td>
+              <td>
+                MATSUBA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(81, 110, 65)"></div>
+              </td>
+              <td>
+                rgb(81, 110, 65)
+              </td>
+              <td>
+                AONI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(145, 180, 147)"></div>
+              </td>
+              <td>
+                rgb(145, 180, 147)
+              </td>
+              <td>
+                USUAO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(128, 143, 124)"></div>
+              </td>
+              <td>
+                rgb(128, 143, 124)
+              </td>
+              <td>
+                YANAGINEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(27, 129, 62)"></div>
+              </td>
+              <td>
+                rgb(27, 129, 62)
+              </td>
+              <td>
+                TOKIWA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(93, 172, 129)"></div>
+              </td>
+              <td>
+                rgb(93, 172, 129)
+              </td>
+              <td>
+                WAKATAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(54, 86, 60)"></div>
+              </td>
+              <td>
+                rgb(54, 86, 60)
+              </td>
+              <td>
+                CHITOSEMIDORI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(34, 125, 81)"></div>
+              </td>
+              <td>
+                rgb(34, 125, 81)
+              </td>
+              <td>
+                MIDORI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(168, 216, 185)"></div>
+              </td>
+              <td>
+                rgb(168, 216, 185)
+              </td>
+              <td>
+                BYAKUROKU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(106, 131, 114)"></div>
+              </td>
+              <td>
+                rgb(106, 131, 114)
+              </td>
+              <td>
+                OITAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(45, 109, 75)"></div>
+              </td>
+              <td>
+                rgb(45, 109, 75)
+              </td>
+              <td>
+                TOKUSA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(70, 93, 76)"></div>
+              </td>
+              <td>
+                rgb(70, 93, 76)
+              </td>
+              <td>
+                ONANDOCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(36, 147, 110)"></div>
+              </td>
+              <td>
+                rgb(36, 147, 110)
+              </td>
+              <td>
+                ROKUSYOH
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(134, 166, 151)"></div>
+              </td>
+              <td>
+                rgb(134, 166, 151)
+              </td>
+              <td>
+                SABISEIJI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(0, 137, 108)"></div>
+              </td>
+              <td>
+                rgb(0, 137, 108)
+              </td>
+              <td>
+                AOTAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(9, 97, 72)"></div>
+              </td>
+              <td>
+                rgb(9, 97, 72)
+              </td>
+              <td>
+                VELUDO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(32, 96, 79)"></div>
+              </td>
+              <td>
+                rgb(32, 96, 79)
+              </td>
+              <td>
+                MUSHIAO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(15, 76, 58)"></div>
+              </td>
+              <td>
+                rgb(15, 76, 58)
+              </td>
+              <td>
+                AIMIRUCHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(79, 114, 108)"></div>
+              </td>
+              <td>
+                rgb(79, 114, 108)
+              </td>
+              <td>
+                TONOCHA2
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(0, 170, 144)"></div>
+              </td>
+              <td>
+                rgb(0, 170, 144)
+              </td>
+              <td>
+                AOMIDORI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(105, 176, 172)"></div>
+              </td>
+              <td>
+                rgb(105, 176, 172)
+              </td>
+              <td>
+                SEIJI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(38, 69, 61)"></div>
+              </td>
+              <td>
+                rgb(38, 69, 61)
+              </td>
+              <td>
+                TETSU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(102, 186, 183)"></div>
+              </td>
+              <td>
+                rgb(102, 186, 183)
+              </td>
+              <td>
+                MIZUASAGI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(38, 135, 133)"></div>
+              </td>
+              <td>
+                rgb(38, 135, 133)
+              </td>
+              <td>
+                SEIHEKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(64, 91, 85)"></div>
+              </td>
+              <td>
+                rgb(64, 91, 85)
+              </td>
+              <td>
+                SABITETSUONANDO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(48, 90, 86)"></div>
+              </td>
+              <td>
+                rgb(48, 90, 86)
+              </td>
+              <td>
+                KORAINANDO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(120, 194, 196)"></div>
+              </td>
+              <td>
+                rgb(120, 194, 196)
+              </td>
+              <td>
+                BYAKUGUN
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(55, 107, 109)"></div>
+              </td>
+              <td>
+                rgb(55, 107, 109)
+              </td>
+              <td>
+                OMESHICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(165, 222, 228)"></div>
+              </td>
+              <td>
+                rgb(165, 222, 228)
+              </td>
+              <td>
+                KAMENOZOKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(119, 150, 154)"></div>
+              </td>
+              <td>
+                rgb(119, 150, 154)
+              </td>
+              <td>
+                FUKAGAWANEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(102, 153, 161)"></div>
+              </td>
+              <td>
+                rgb(102, 153, 161)
+              </td>
+              <td>
+                SABIASAGI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(129, 199, 212)"></div>
+              </td>
+              <td>
+                rgb(129, 199, 212)
+              </td>
+              <td>
+                MIZU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(51, 166, 184)"></div>
+              </td>
+              <td>
+                rgb(51, 166, 184)
+              </td>
+              <td>
+                ASAGI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(12, 72, 66)"></div>
+              </td>
+              <td>
+                rgb(12, 72, 66)
+              </td>
+              <td>
+                ONANDO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(13, 86, 97)"></div>
+              </td>
+              <td>
+                rgb(13, 86, 97)
+              </td>
+              <td>
+                AI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(0, 137, 167)"></div>
+              </td>
+              <td>
+                rgb(0, 137, 167)
+              </td>
+              <td>
+                SHINBASHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(51, 103, 116)"></div>
+              </td>
+              <td>
+                rgb(51, 103, 116)
+              </td>
+              <td>
+                SABIONANDO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(37, 83, 89)"></div>
+              </td>
+              <td>
+                rgb(37, 83, 89)
+              </td>
+              <td>
+                TETSUONANDO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(30, 136, 168)"></div>
+              </td>
+              <td>
+                rgb(30, 136, 168)
+              </td>
+              <td>
+                HANAASAGI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(86, 108, 115)"></div>
+              </td>
+              <td>
+                rgb(86, 108, 115)
+              </td>
+              <td>
+                AINEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(87, 124, 138)"></div>
+              </td>
+              <td>
+                rgb(87, 124, 138)
+              </td>
+              <td>
+                MASUHANA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(88, 178, 220)"></div>
+              </td>
+              <td>
+                rgb(88, 178, 220)
+              </td>
+              <td>
+                SORA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(43, 95, 117)"></div>
+              </td>
+              <td>
+                rgb(43, 95, 117)
+              </td>
+              <td>
+                NOSHIMEHANA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(58, 143, 183)"></div>
+              </td>
+              <td>
+                rgb(58, 143, 183)
+              </td>
+              <td>
+                CHIGUSA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(46, 92, 110)"></div>
+              </td>
+              <td>
+                rgb(46, 92, 110)
+              </td>
+              <td>
+                OMESHIONANDO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(0, 98, 132)"></div>
+              </td>
+              <td>
+                rgb(0, 98, 132)
+              </td>
+              <td>
+                HANADA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(125, 185, 222)"></div>
+              </td>
+              <td>
+                rgb(125, 185, 222)
+              </td>
+              <td>
+                WASURENAGUSA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(81, 168, 221)"></div>
+              </td>
+              <td>
+                rgb(81, 168, 221)
+              </td>
+              <td>
+                GUNJYO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(46, 169, 223)"></div>
+              </td>
+              <td>
+                rgb(46, 169, 223)
+              </td>
+              <td>
+                TSUYUKUSA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(11, 16, 19)"></div>
+              </td>
+              <td>
+                rgb(11, 16, 19)
+              </td>
+              <td>
+                KUROTSURUBAMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(15, 37, 64)"></div>
+              </td>
+              <td>
+                rgb(15, 37, 64)
+              </td>
+              <td>
+                KON
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(8, 25, 45)"></div>
+              </td>
+              <td>
+                rgb(8, 25, 45)
+              </td>
+              <td>
+                KACHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(0, 92, 175)"></div>
+              </td>
+              <td>
+                rgb(0, 92, 175)
+              </td>
+              <td>
+                RURI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(11, 52, 110)"></div>
+              </td>
+              <td>
+                rgb(11, 52, 110)
+              </td>
+              <td>
+                RURIKON
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(123, 144, 210)"></div>
+              </td>
+              <td>
+                rgb(123, 144, 210)
+              </td>
+              <td>
+                BENIMIDORI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(110, 117, 164)"></div>
+              </td>
+              <td>
+                rgb(110, 117, 164)
+              </td>
+              <td>
+                FUJINEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(38, 30, 71)"></div>
+              </td>
+              <td>
+                rgb(38, 30, 71)
+              </td>
+              <td>
+                TETSUKON
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(17, 50, 133)"></div>
+              </td>
+              <td>
+                rgb(17, 50, 133)
+              </td>
+              <td>
+                KONJYO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(78, 79, 151)"></div>
+              </td>
+              <td>
+                rgb(78, 79, 151)
+              </td>
+              <td>
+                BENIKAKEHANA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(33, 30, 85)"></div>
+              </td>
+              <td>
+                rgb(33, 30, 85)
+              </td>
+              <td>
+                KONKIKYO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(139, 129, 195)"></div>
+              </td>
+              <td>
+                rgb(139, 129, 195)
+              </td>
+              <td>
+                FUJI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(112, 100, 154)"></div>
+              </td>
+              <td>
+                rgb(112, 100, 154)
+              </td>
+              <td>
+                FUTAAI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(155, 144, 194)"></div>
+              </td>
+              <td>
+                rgb(155, 144, 194)
+              </td>
+              <td>
+                OUCHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(138, 107, 190)"></div>
+              </td>
+              <td>
+                rgb(138, 107, 190)
+              </td>
+              <td>
+                FUJIMURASAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(106, 76, 156)"></div>
+              </td>
+              <td>
+                rgb(106, 76, 156)
+              </td>
+              <td>
+                KIKYO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(143, 119, 181)"></div>
+              </td>
+              <td>
+                rgb(143, 119, 181)
+              </td>
+              <td>
+                SHION
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(83, 61, 91)"></div>
+              </td>
+              <td>
+                rgb(83, 61, 91)
+              </td>
+              <td>
+                MESSHI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(178, 143, 206)"></div>
+              </td>
+              <td>
+                rgb(178, 143, 206)
+              </td>
+              <td>
+                USU
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(152, 109, 178)"></div>
+              </td>
+              <td>
+                rgb(152, 109, 178)
+              </td>
+              <td>
+                HASHITA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(119, 66, 141)"></div>
+              </td>
+              <td>
+                rgb(119, 66, 141)
+              </td>
+              <td>
+                EDOMURASAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(60, 47, 65)"></div>
+              </td>
+              <td>
+                rgb(60, 47, 65)
+              </td>
+              <td>
+                SHIKON
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(74, 34, 93)"></div>
+              </td>
+              <td>
+                rgb(74, 34, 93)
+              </td>
+              <td>
+                KOKIMURASAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(102, 50, 124)"></div>
+              </td>
+              <td>
+                rgb(102, 50, 124)
+              </td>
+              <td>
+                SUMIRE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(89, 44, 99)"></div>
+              </td>
+              <td>
+                rgb(89, 44, 99)
+              </td>
+              <td>
+                MURASAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(111, 51, 129)"></div>
+              </td>
+              <td>
+                rgb(111, 51, 129)
+              </td>
+              <td>
+                AYAME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(87, 76, 87)"></div>
+              </td>
+              <td>
+                rgb(87, 76, 87)
+              </td>
+              <td>
+                FUJISUSUTAKE
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(180, 129, 187)"></div>
+              </td>
+              <td>
+                rgb(180, 129, 187)
+              </td>
+              <td>
+                BENIFUJI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(63, 43, 54)"></div>
+              </td>
+              <td>
+                rgb(63, 43, 54)
+              </td>
+              <td>
+                KUROBENI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(87, 42, 63)"></div>
+              </td>
+              <td>
+                rgb(87, 42, 63)
+              </td>
+              <td>
+                NASUKON
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(94, 61, 80)"></div>
+              </td>
+              <td>
+                rgb(94, 61, 80)
+              </td>
+              <td>
+                BUDOHNEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(114, 99, 110)"></div>
+              </td>
+              <td>
+                rgb(114, 99, 110)
+              </td>
+              <td>
+                HATOBANEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(98, 41, 84)"></div>
+              </td>
+              <td>
+                rgb(98, 41, 84)
+              </td>
+              <td>
+                KAKITSUBATA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(109, 46, 91)"></div>
+              </td>
+              <td>
+                rgb(109, 46, 91)
+              </td>
+              <td>
+                EBIZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(193, 50, 142)"></div>
+              </td>
+              <td>
+                rgb(193, 50, 142)
+              </td>
+              <td>
+                BOTAN
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(168, 73, 122)"></div>
+              </td>
+              <td>
+                rgb(168, 73, 122)
+              </td>
+              <td>
+                UMEMURASAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(86, 46, 55)"></div>
+              </td>
+              <td>
+                rgb(86, 46, 55)
+              </td>
+              <td>
+                NISEMURASAKI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(224, 60, 138)"></div>
+              </td>
+              <td>
+                rgb(224, 60, 138)
+              </td>
+              <td>
+                TSUTSUJI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(96, 55, 62)"></div>
+              </td>
+              <td>
+                rgb(96, 55, 62)
+              </td>
+              <td>
+                MURASAKITOBI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(252, 250, 242)"></div>
+              </td>
+              <td>
+                rgb(252, 250, 242)
+              </td>
+              <td>
+                SHIRONERI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(255, 255, 251)"></div>
+              </td>
+              <td>
+                rgb(255, 255, 251)
+              </td>
+              <td>
+                GOFUN
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(189, 192, 186)"></div>
+              </td>
+              <td>
+                rgb(189, 192, 186)
+              </td>
+              <td>
+                SHIRONEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(145, 152, 159)"></div>
+              </td>
+              <td>
+                rgb(145, 152, 159)
+              </td>
+              <td>
+                GINNEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(120, 120, 120)"></div>
+              </td>
+              <td>
+                rgb(120, 120, 120)
+              </td>
+              <td>
+                NAMARI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(130, 130, 130)"></div>
+              </td>
+              <td>
+                rgb(130, 130, 130)
+              </td>
+              <td>
+                HAI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(120, 125, 123)"></div>
+              </td>
+              <td>
+                rgb(120, 125, 123)
+              </td>
+              <td>
+                SUNEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(112, 124, 116)"></div>
+              </td>
+              <td>
+                rgb(112, 124, 116)
+              </td>
+              <td>
+                RIKYUNEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(101, 103, 101)"></div>
+              </td>
+              <td>
+                rgb(101, 103, 101)
+              </td>
+              <td>
+                NIBI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(83, 89, 83)"></div>
+              </td>
+              <td>
+                rgb(83, 89, 83)
+              </td>
+              <td>
+                AONIBI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(79, 79, 72)"></div>
+              </td>
+              <td>
+                rgb(79, 79, 72)
+              </td>
+              <td>
+                DOBUNEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(82, 67, 61)"></div>
+              </td>
+              <td>
+                rgb(82, 67, 61)
+              </td>
+              <td>
+                BENIKESHINEZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(55, 60, 56)"></div>
+              </td>
+              <td>
+                rgb(55, 60, 56)
+              </td>
+              <td>
+                AISUMICHA
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(58, 50, 38)"></div>
+              </td>
+              <td>
+                rgb(58, 50, 38)
+              </td>
+              <td>
+                BINROJIZOME
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(67, 67, 67)"></div>
+              </td>
+              <td>
+                rgb(67, 67, 67)
+              </td>
+              <td>
+                KESHIZUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(28, 28, 28)"></div>
+              </td>
+              <td>
+                rgb(28, 28, 28)
+              </td>
+              <td>
+                SUMI
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(8, 8, 8)"></div>
+              </td>
+              <td>
+                rgb(8, 8, 8)
+              </td>
+              <td>
+                KURO
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <div class="color" style="background-color: rgb(12, 12, 12)"></div>
+              </td>
+              <td>
+                rgb(12, 12, 12)
+              </td>
+              <td>
+                RO
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </li>
+      <li>
+        Use it:
+        <br>
+        like:
+        <br>
+        <code>
+          <<span></span>div style="width:50px;height:50px;background-color:var(--NADESHIKO);">
+        </code>
+        <br>
+        or
+        <br>
+        <code>
+          .dom {
+          <br>
+          background-color: var(--NADESHIKO);
+          <br>
+          }
+        </code>
+      </li>
+    </ol>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

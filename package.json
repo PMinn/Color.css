@@ -1,0 +1,22 @@
+{
+  "name": "color.css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/render.js",
+  "dependencies": {
+    "ejs": "^3.1.8"
+  },
+  "scripts": {
+    "build": "cd src && node render.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMinn/Color.css.git"
+  },
+  "author": "P'Min",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PMinn/Color.css/issues"
+  },
+  "homepage": "https://github.com/PMinn/Color.css#readme"
+}

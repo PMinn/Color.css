@@ -30,32 +30,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="/">Color.css</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="./get-started.html">Get started</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Colors
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          
-          <a class="dropdown-item" href="./Morandi.html">Morandi Colors</a>
-          
-          <a class="dropdown-item" href="./Japanese-Traditional.html">Japanese Traditional Colors</a>
-          
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <%- include('./partials/nav.ejs') %>
   <div class="d-flex w-100 align-items-center flex-column">
     <img src="https://raw.githubusercontent.com/PMinn/Color.css/main/image/Logo.svg" class="logo" alt="Color.css Logo">
     <h2 class="title">Color.css Docs</h2>
