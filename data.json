@@ -1,6 +1,6 @@
 [
     {
-        "id": "Morandi",
+        "id": "morandi",
         "name": "Morandi",
         "data": [
             {
@@ -102,7 +102,7 @@
         ]
     },
     {
-        "id": "Japanese-Traditional",
+        "id": "japanese-traditional",
         "name": "Japanese Traditional",
         "data": [
             {
