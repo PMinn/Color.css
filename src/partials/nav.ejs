@@ -1,24 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="./">Color.css</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav id="docs-nav" class="docs-nav navbar">
+  <ul class="section-items list-unstyled nav flex-column pb-3">
+    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#Introduction"><span class="theme-icon-holder me-2"><i class="fas fa-magnifying-glass"></i></span>Introduction</a></li>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="./get-started.html">Get started</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Colors
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <% nav.forEach(color=> { %>
-          <a class="dropdown-item" href="./<%= color.id %>.html"><%= color.name %> Colors</a>
-          <% }) %>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#Installation"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+    <% data.forEach(color=>{ %>
+    <li class="nav-item"><a class="nav-link scrollto" href="#Installation_<%- color.id -%>"><%- color.name -%> Color</a></li>
+    <% }) %>
+    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#Usage"><span class="theme-icon-holder me-2"><i class="fas fa-code"></i></span>Usage</a></li>
+    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#Colors"><span class="theme-icon-holder me-2"><i class="fas fa-palette"></i></span>Colors</a></li>
+    <% data.forEach(color=>{ %>
+    <li class="nav-item"><a class="nav-link scrollto" href="#Colors_<%- color.id -%>"><%- color.name -%> Color</a></li>
+    <% }) %>
+  </ul>
 </nav>

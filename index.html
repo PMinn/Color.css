@@ -1,71 +1,2357 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color.css</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./src/Japanese-Traditional.css">
-  <style>
-    body {
-      background-color: var(--KACHI);
-    }
 
-    .navbar {
-      background-color: var(--KUROTSURUBAMI);
-      color: #fff;
-    }
+  <!-- icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-    .logo {
-      width: 100vw;
-      max-width: 600px;
-    }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
-    .title {
-      color: rgb(201, 209, 217);
-      text-align: center;
-    }
-  </style>
+  <!-- FontAwesome JS-->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.css">
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+  <link id="theme-style" rel="stylesheet" href="assets/css/docs.css">
+
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="./">Color.css</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="./get-started.html">Get started</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Colors
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          
-          <a class="dropdown-item" href="./morandi.html">Morandi Colors</a>
-          
-          <a class="dropdown-item" href="./japanese-traditional.html">Japanese Traditional Colors</a>
-          
+<body class="docs-page">
+  <header class="header fixed-top">
+    <div class="branding docs-branding">
+      <div class="container-fluid position-relative py-2">
+        <div class="docs-logo-wrapper">
+          <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="/icons/android-chrome-384x384.png" width="40" height="40" alt="logo"><span class="logo-text">Color.css<span class="text-alt">Docs</span></span></a></div>
         </div>
-      </li>
-    </ul>
-  </div>
+        <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+          <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+            <li class="list-inline-item"><a href="https://github.com/PMinn/Color.css"><i class="fab fa-github fa-fw"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar">
+      <nav id="docs-nav" class="docs-nav navbar">
+  <ul class="section-items list-unstyled nav flex-column pb-3">
+    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#Introduction"><span class="theme-icon-holder me-2"><i class="fas fa-magnifying-glass"></i></span>Introduction</a></li>
+
+    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#Installation"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+    
+    <li class="nav-item"><a class="nav-link scrollto" href="#Installation_morandi">Morandi Color</a></li>
+    
+    <li class="nav-item"><a class="nav-link scrollto" href="#Installation_japanese-traditional">Japanese Traditional Color</a></li>
+    
+    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#Usage"><span class="theme-icon-holder me-2"><i class="fas fa-code"></i></span>Usage</a></li>
+    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#Colors"><span class="theme-icon-holder me-2"><i class="fas fa-palette"></i></span>Colors</a></li>
+    
+    <li class="nav-item"><a class="nav-link scrollto" href="#Colors_morandi">Morandi Color</a></li>
+    
+    <li class="nav-item"><a class="nav-link scrollto" href="#Colors_japanese-traditional">Japanese Traditional Color</a></li>
+    
+  </ul>
 </nav>
-  <div class="d-flex w-100 align-items-center flex-column">
-    <img src="https://raw.githubusercontent.com/PMinn/Color.css/main/image/Logo.svg" class="logo" alt="Color.css Logo">
-    <h2 class="title">Color.css Docs</h2>
+    </div>
+
+    <div class="docs-content">
+      <div class="container">
+        <article class="docs-article" id="Introduction">
+          <header class="docs-header">
+            <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2022-12-30</span></h1>
+            <section class="docs-intro">
+              <p>Powerful, extensible, and feature-packed frontend toolkit.</p>
+            </section>
+          </header>
+        </article>
+
+        <article class="docs-article" id="Installation">
+          <header class="docs-header">
+            <h1 class="docs-heading">Installation</h1>
+            <section class="docs-intro">
+              <p>Include color css cdn in your website:</p>
+            </section>
+          </header>
+          
+          <section class="docs-section" id="Installation_morandi">
+            <h2 class="section-heading">Morandi Color</h2>
+            <p>
+              <code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://cdn.jsdelivr.net/gh/PMinn/Color.css/src/morandi.css&#x22;&#x3E;</code>
+            </p>
+          </section>
+          
+          <section class="docs-section" id="Installation_japanese-traditional">
+            <h2 class="section-heading">Japanese Traditional Color</h2>
+            <p>
+              <code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://cdn.jsdelivr.net/gh/PMinn/Color.css/src/japanese-traditional.css&#x22;&#x3E;</code>
+            </p>
+          </section>
+          
+        </article>
+        <!--//docs-article-->
+
+
+        <article class="docs-article" id="Usage">
+          <header class="docs-header">
+            <h1 class="docs-heading">Usage</h1>
+            <section class="docs-intro">
+              <p>Use CSS variables</p>
+              <div class="docs-code-block">
+                <pre class="shadow-lg rounded"><code class="language-xml hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width:50px;height:50px;background-color:var(--&lt;ColorName&gt;);"</span>&gt;</span></code></pre>
+              </div>
+              <p>or</p>
+              <div class="docs-code-block">
+                <pre class="shadow-lg rounded"><code class="language-css hljs"><span class="hljs-selector-tag">div</span> {<br>    <span class="hljs-attribute">width</span>:<span class="hljs-number">50px</span>;<br>    <span class="hljs-attribute">height</span>:<span class="hljs-number">50px</span>;<br>    <span class="hljs-attribute">background-color</span>:<span class="hljs-built_in">var</span>(--&lt;ColorName&gt;);<br>}</code></pre>
+              </div>
+              <div class="callout-block callout-block-info me-1">
+  <div class="content">
+    <h4 class="callout-title">
+      <span class="callout-icon-holder me-1">
+        
+        <i class="fas fa-info-circle"></i> Note
+        
+      </span>
+    </h4>
+    <p>&lt;ColorName&gt; must be replaced with the ColorName to use.</p>
   </div>
-  <div class="d-flex w-100 justify-content-center">
-    <a type="button" class="btn btn-primary mt-5" href="./get-started.html">Get started</a>
+  <!--//content-->
+</div>
+            </section>
+          </header>
+        </article>
+
+        <article class="docs-article" id="Colors">
+          <header class="docs-header">
+            <h1 class="docs-heading">Colors</h1>
+            <section class="docs-intro">
+              <p>There are 2 difference color can use:</p>
+            </section>
+          </header>
+          
+          <section class="docs-section" id="Colors_morandi">
+            <h2 class="section-heading">Morandi Color</h2>
+            <div class="table-responsive my-4">
+              <table class="table table-bordered table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Color</th>
+                    <th scope="col">Hex</th>
+                    <th scope="col">ColorName</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #EBE8E1;"></div>
+                    </td>
+                    <td>#EBE8E1</td>
+                    <td>IVORY</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #D9ADA2;"></div>
+                    </td>
+                    <td>#D9ADA2</td>
+                    <td>DUSTY-ROSE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #A68C7F;"></div>
+                    </td>
+                    <td>#A68C7F</td>
+                    <td>TOFFEE-TAUPE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #CDC1C1;"></div>
+                    </td>
+                    <td>#CDC1C1</td>
+                    <td>STONE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ECD1C6;"></div>
+                    </td>
+                    <td>#ECD1C6</td>
+                    <td>NUDE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #E5BBA2;"></div>
+                    </td>
+                    <td>#E5BBA2</td>
+                    <td>DARK-NUDE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #40494B;"></div>
+                    </td>
+                    <td>#40494B</td>
+                    <td>NAVY-GREEN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #E8DBD8;"></div>
+                    </td>
+                    <td>#E8DBD8</td>
+                    <td>PALEPINK</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #9CA9AB;"></div>
+                    </td>
+                    <td>#9CA9AB</td>
+                    <td>OCEAN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #614E55;"></div>
+                    </td>
+                    <td>#614E55</td>
+                    <td>PLUM-GRAY</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #B0968E;"></div>
+                    </td>
+                    <td>#B0968E</td>
+                    <td>MAUVE-DUSK</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #D3C6B6;"></div>
+                    </td>
+                    <td>#D3C6B6</td>
+                    <td>SANFSTONE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #8D837A;"></div>
+                    </td>
+                    <td>#8D837A</td>
+                    <td>LIGHT-MUD</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #595C49;"></div>
+                    </td>
+                    <td>#595C49</td>
+                    <td>DARK-OLIVE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #C48468;"></div>
+                    </td>
+                    <td>#C48468</td>
+                    <td>CLAY</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #A1A799;"></div>
+                    </td>
+                    <td>#A1A799</td>
+                    <td>SAGE</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </section>
+          
+          <section class="docs-section" id="Colors_japanese-traditional">
+            <h2 class="section-heading">Japanese Traditional Color</h2>
+            <div class="table-responsive my-4">
+              <table class="table table-bordered table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Color</th>
+                    <th scope="col">Hex</th>
+                    <th scope="col">ColorName</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #dc9fb4;"></div>
+                    </td>
+                    <td>#dc9fb4</td>
+                    <td>NADESHIKO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e16b8c;"></div>
+                    </td>
+                    <td>#e16b8c</td>
+                    <td>KOHBAI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #8e354a;"></div>
+                    </td>
+                    <td>#8e354a</td>
+                    <td>SUOH</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f8c3cd;"></div>
+                    </td>
+                    <td>#f8c3cd</td>
+                    <td>TAIKOH</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f4a7b9;"></div>
+                    </td>
+                    <td>#f4a7b9</td>
+                    <td>IKKONZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #64363c;"></div>
+                    </td>
+                    <td>#64363c</td>
+                    <td>KUWAZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f596aa;"></div>
+                    </td>
+                    <td>#f596aa</td>
+                    <td>MOMO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b5495b;"></div>
+                    </td>
+                    <td>#b5495b</td>
+                    <td>ICHIGO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e87a90;"></div>
+                    </td>
+                    <td>#e87a90</td>
+                    <td>USUBENI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #d05a6e;"></div>
+                    </td>
+                    <td>#d05a6e</td>
+                    <td>IMAYOH</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #db4d6d;"></div>
+                    </td>
+                    <td>#db4d6d</td>
+                    <td>NAKABENI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #fedfe1;"></div>
+                    </td>
+                    <td>#fedfe1</td>
+                    <td>SAKURA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #9e7a7a;"></div>
+                    </td>
+                    <td>#9e7a7a</td>
+                    <td>UMENEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #d0104c;"></div>
+                    </td>
+                    <td>#d0104c</td>
+                    <td>KARAKURENAI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #9f353a;"></div>
+                    </td>
+                    <td>#9f353a</td>
+                    <td>ENJI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #cb1b45;"></div>
+                    </td>
+                    <td>#cb1b45</td>
+                    <td>KURENAI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #eea9a9;"></div>
+                    </td>
+                    <td>#eea9a9</td>
+                    <td>TOKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #bf6766;"></div>
+                    </td>
+                    <td>#bf6766</td>
+                    <td>CYOHSYUN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #86473f;"></div>
+                    </td>
+                    <td>#86473f</td>
+                    <td>KOKIAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b19693;"></div>
+                    </td>
+                    <td>#b19693</td>
+                    <td>SAKURANEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #eb7a77;"></div>
+                    </td>
+                    <td>#eb7a77</td>
+                    <td>JINZAMOMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #954a45;"></div>
+                    </td>
+                    <td>#954a45</td>
+                    <td>AZUKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a96360;"></div>
+                    </td>
+                    <td>#a96360</td>
+                    <td>SUOHKOH</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #cb4042;"></div>
+                    </td>
+                    <td>#cb4042</td>
+                    <td>AKABENI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ab3b3a;"></div>
+                    </td>
+                    <td>#ab3b3a</td>
+                    <td>SHINSYU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #d7c4bb;"></div>
+                    </td>
+                    <td>#d7c4bb</td>
+                    <td>HAIZAKURA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #904840;"></div>
+                    </td>
+                    <td>#904840</td>
+                    <td>KURIUME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #734338;"></div>
+                    </td>
+                    <td>#734338</td>
+                    <td>EBICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #c73e3a;"></div>
+                    </td>
+                    <td>#c73e3a</td>
+                    <td>GINSYU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #554236;"></div>
+                    </td>
+                    <td>#554236</td>
+                    <td>KUROTOBI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #994639;"></div>
+                    </td>
+                    <td>#994639</td>
+                    <td>BENITOBI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f19483;"></div>
+                    </td>
+                    <td>#f19483</td>
+                    <td>AKEBONO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b54434;"></div>
+                    </td>
+                    <td>#b54434</td>
+                    <td>BENIKABA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b9887d;"></div>
+                    </td>
+                    <td>#b9887d</td>
+                    <td>MIZUGAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f17c67;"></div>
+                    </td>
+                    <td>#f17c67</td>
+                    <td>SANGOSYU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #884c3a;"></div>
+                    </td>
+                    <td>#884c3a</td>
+                    <td>BENIHIWADA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e83015;"></div>
+                    </td>
+                    <td>#e83015</td>
+                    <td>SYOJYOHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #d75455;"></div>
+                    </td>
+                    <td>#d75455</td>
+                    <td>ENTAN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b55d4c;"></div>
+                    </td>
+                    <td>#b55d4c</td>
+                    <td>SHIKANCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #854836;"></div>
+                    </td>
+                    <td>#854836</td>
+                    <td>HIWADA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a35e47;"></div>
+                    </td>
+                    <td>#a35e47</td>
+                    <td>KAKISHIBU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #cc543a;"></div>
+                    </td>
+                    <td>#cc543a</td>
+                    <td>AKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #724832;"></div>
+                    </td>
+                    <td>#724832</td>
+                    <td>TOBI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f75c2f;"></div>
+                    </td>
+                    <td>#f75c2f</td>
+                    <td>BENIHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6a4028;"></div>
+                    </td>
+                    <td>#6a4028</td>
+                    <td>KURIKAWACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #9a5034;"></div>
+                    </td>
+                    <td>#9a5034</td>
+                    <td>BENGARA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #c46243;"></div>
+                    </td>
+                    <td>#c46243</td>
+                    <td>TERIGAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #af5f3c;"></div>
+                    </td>
+                    <td>#af5f3c</td>
+                    <td>EDOCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #fb966e;"></div>
+                    </td>
+                    <td>#fb966e</td>
+                    <td>ARAISYU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #724938;"></div>
+                    </td>
+                    <td>#724938</td>
+                    <td>MOMOSHIOCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b47157;"></div>
+                    </td>
+                    <td>#b47157</td>
+                    <td>KARACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #db8e71;"></div>
+                    </td>
+                    <td>#db8e71</td>
+                    <td>TOKIGARACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f05e1c;"></div>
+                    </td>
+                    <td>#f05e1c</td>
+                    <td>OHNI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ed784a;"></div>
+                    </td>
+                    <td>#ed784a</td>
+                    <td>SOHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ca7853;"></div>
+                    </td>
+                    <td>#ca7853</td>
+                    <td>ENSYUCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b35c37;"></div>
+                    </td>
+                    <td>#b35c37</td>
+                    <td>KABACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #563f2e;"></div>
+                    </td>
+                    <td>#563f2e</td>
+                    <td>KOGECHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e3916e;"></div>
+                    </td>
+                    <td>#e3916e</td>
+                    <td>AKAKOH</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #8f5a3c;"></div>
+                    </td>
+                    <td>#8f5a3c</td>
+                    <td>SUZUMECHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f0a986;"></div>
+                    </td>
+                    <td>#f0a986</td>
+                    <td>SHISHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a0674b;"></div>
+                    </td>
+                    <td>#a0674b</td>
+                    <td>SODENKARACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #c1693c;"></div>
+                    </td>
+                    <td>#c1693c</td>
+                    <td>KABA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #fb9966;"></div>
+                    </td>
+                    <td>#fb9966</td>
+                    <td>KOKIKUCHINASHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #947a6d;"></div>
+                    </td>
+                    <td>#947a6d</td>
+                    <td>KURUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a36336;"></div>
+                    </td>
+                    <td>#a36336</td>
+                    <td>TAISYA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e79460;"></div>
+                    </td>
+                    <td>#e79460</td>
+                    <td>ARAIGAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #7d532c;"></div>
+                    </td>
+                    <td>#7d532c</td>
+                    <td>KOHROZEN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #c78550;"></div>
+                    </td>
+                    <td>#c78550</td>
+                    <td>AKAKUCHIBA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #985f2a;"></div>
+                    </td>
+                    <td>#985f2a</td>
+                    <td>TONOCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e1a679;"></div>
+                    </td>
+                    <td>#e1a679</td>
+                    <td>AKASHIROTSURUBAMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #855b32;"></div>
+                    </td>
+                    <td>#855b32</td>
+                    <td>SENCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #fc9f4d;"></div>
+                    </td>
+                    <td>#fc9f4d</td>
+                    <td>KANZO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ffba84;"></div>
+                    </td>
+                    <td>#ffba84</td>
+                    <td>SHAREGAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e98b2a;"></div>
+                    </td>
+                    <td>#e98b2a</td>
+                    <td>BENIUKON</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e9a368;"></div>
+                    </td>
+                    <td>#e9a368</td>
+                    <td>UMEZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b17844;"></div>
+                    </td>
+                    <td>#b17844</td>
+                    <td>BIWACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #96632e;"></div>
+                    </td>
+                    <td>#96632e</td>
+                    <td>CHOJICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #43341b;"></div>
+                    </td>
+                    <td>#43341b</td>
+                    <td>KENPOHZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ca7a2c;"></div>
+                    </td>
+                    <td>#ca7a2c</td>
+                    <td>KOHAKU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ecb88a;"></div>
+                    </td>
+                    <td>#ecb88a</td>
+                    <td>USUGAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #78552b;"></div>
+                    </td>
+                    <td>#78552b</td>
+                    <td>KYARA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b07736;"></div>
+                    </td>
+                    <td>#b07736</td>
+                    <td>CHOJIZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #967249;"></div>
+                    </td>
+                    <td>#967249</td>
+                    <td>FUSHIZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e2943b;"></div>
+                    </td>
+                    <td>#e2943b</td>
+                    <td>KUCHIBA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #c7802d;"></div>
+                    </td>
+                    <td>#c7802d</td>
+                    <td>KINCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #9b6e23;"></div>
+                    </td>
+                    <td>#9b6e23</td>
+                    <td>KITSUNE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6e552f;"></div>
+                    </td>
+                    <td>#6e552f</td>
+                    <td>SUSUTAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ebb471;"></div>
+                    </td>
+                    <td>#ebb471</td>
+                    <td>USUKOH</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #d7b98e;"></div>
+                    </td>
+                    <td>#d7b98e</td>
+                    <td>TONOKO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #82663a;"></div>
+                    </td>
+                    <td>#82663a</td>
+                    <td>GINSUSUTAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b68e55;"></div>
+                    </td>
+                    <td>#b68e55</td>
+                    <td>OHDO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #bc9f77;"></div>
+                    </td>
+                    <td>#bc9f77</td>
+                    <td>SHIRACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #876633;"></div>
+                    </td>
+                    <td>#876633</td>
+                    <td>KOBICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #c18a26;"></div>
+                    </td>
+                    <td>#c18a26</td>
+                    <td>KIGARACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ffb11b;"></div>
+                    </td>
+                    <td>#ffb11b</td>
+                    <td>YAMABUKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #d19826;"></div>
+                    </td>
+                    <td>#d19826</td>
+                    <td>YAMABUKICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #dda52d;"></div>
+                    </td>
+                    <td>#dda52d</td>
+                    <td>HAJIZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #c99833;"></div>
+                    </td>
+                    <td>#c99833</td>
+                    <td>KUWACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f9bf45;"></div>
+                    </td>
+                    <td>#f9bf45</td>
+                    <td>TAMAGO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #dcb879;"></div>
+                    </td>
+                    <td>#dcb879</td>
+                    <td>SHIROTSURUBAMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ba9132;"></div>
+                    </td>
+                    <td>#ba9132</td>
+                    <td>KITSURUBAMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e8b647;"></div>
+                    </td>
+                    <td>#e8b647</td>
+                    <td>TAMAMOROKOSHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f7c242;"></div>
+                    </td>
+                    <td>#f7c242</td>
+                    <td>HANABA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #7d6c46;"></div>
+                    </td>
+                    <td>#7d6c46</td>
+                    <td>NAMAKABE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #dac9a6;"></div>
+                    </td>
+                    <td>#dac9a6</td>
+                    <td>TORINOKO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #fad689;"></div>
+                    </td>
+                    <td>#fad689</td>
+                    <td>USUKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #d9ab42;"></div>
+                    </td>
+                    <td>#d9ab42</td>
+                    <td>KIKUCHIBA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f6c555;"></div>
+                    </td>
+                    <td>#f6c555</td>
+                    <td>KUCHINASHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ffc408;"></div>
+                    </td>
+                    <td>#ffc408</td>
+                    <td>TOHOH</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #efbb24;"></div>
+                    </td>
+                    <td>#efbb24</td>
+                    <td>UKON</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #caad5f;"></div>
+                    </td>
+                    <td>#caad5f</td>
+                    <td>KARASHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #8d742a;"></div>
+                    </td>
+                    <td>#8d742a</td>
+                    <td>HIGOSUSUTAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b4a582;"></div>
+                    </td>
+                    <td>#b4a582</td>
+                    <td>RIKYUSHIRACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #877f6c;"></div>
+                    </td>
+                    <td>#877f6c</td>
+                    <td>AKU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #897d55;"></div>
+                    </td>
+                    <td>#897d55</td>
+                    <td>RIKYUCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #74673e;"></div>
+                    </td>
+                    <td>#74673e</td>
+                    <td>ROKOHCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a28c37;"></div>
+                    </td>
+                    <td>#a28c37</td>
+                    <td>NATANEYU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6c6024;"></div>
+                    </td>
+                    <td>#6c6024</td>
+                    <td>UGUISUCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #867835;"></div>
+                    </td>
+                    <td>#867835</td>
+                    <td>KIMIRUCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #62592c;"></div>
+                    </td>
+                    <td>#62592c</td>
+                    <td>MIRUCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e9cd4c;"></div>
+                    </td>
+                    <td>#e9cd4c</td>
+                    <td>KARIYASU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #f7d94c;"></div>
+                    </td>
+                    <td>#f7d94c</td>
+                    <td>NANOHANA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #fbe251;"></div>
+                    </td>
+                    <td>#fbe251</td>
+                    <td>KIHADA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #d9cd90;"></div>
+                    </td>
+                    <td>#d9cd90</td>
+                    <td>MUSHIKURI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ada142;"></div>
+                    </td>
+                    <td>#ada142</td>
+                    <td>AOKUCHIBA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #ddd23b;"></div>
+                    </td>
+                    <td>#ddd23b</td>
+                    <td>OMINAESHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a5a051;"></div>
+                    </td>
+                    <td>#a5a051</td>
+                    <td>HIWACHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #bec23f;"></div>
+                    </td>
+                    <td>#bec23f</td>
+                    <td>HIWA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6c6a2d;"></div>
+                    </td>
+                    <td>#6c6a2d</td>
+                    <td>UGUISU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #939650;"></div>
+                    </td>
+                    <td>#939650</td>
+                    <td>YANAGICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #838a2d;"></div>
+                    </td>
+                    <td>#838a2d</td>
+                    <td>KOKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b1b479;"></div>
+                    </td>
+                    <td>#b1b479</td>
+                    <td>KIKUJIN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #616138;"></div>
+                    </td>
+                    <td>#616138</td>
+                    <td>RIKANCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #4b4e2a;"></div>
+                    </td>
+                    <td>#4b4e2a</td>
+                    <td>AIKOBICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #5b622e;"></div>
+                    </td>
+                    <td>#5b622e</td>
+                    <td>MIRU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #4d5139;"></div>
+                    </td>
+                    <td>#4d5139</td>
+                    <td>SENSAICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #89916b;"></div>
+                    </td>
+                    <td>#89916b</td>
+                    <td>BAIKOCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #90b44b;"></div>
+                    </td>
+                    <td>#90b44b</td>
+                    <td>HIWAMOEGI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #91ad70;"></div>
+                    </td>
+                    <td>#91ad70</td>
+                    <td>YANAGIZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b5caa0;"></div>
+                    </td>
+                    <td>#b5caa0</td>
+                    <td>URAYANAGI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #646a58;"></div>
+                    </td>
+                    <td>#646a58</td>
+                    <td>IWAICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #7ba23f;"></div>
+                    </td>
+                    <td>#7ba23f</td>
+                    <td>MOEGI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #86c166;"></div>
+                    </td>
+                    <td>#86c166</td>
+                    <td>NAE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #4a593d;"></div>
+                    </td>
+                    <td>#4a593d</td>
+                    <td>YANAGISUSUTAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #42602d;"></div>
+                    </td>
+                    <td>#42602d</td>
+                    <td>MATSUBA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #516e41;"></div>
+                    </td>
+                    <td>#516e41</td>
+                    <td>AONI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #91b493;"></div>
+                    </td>
+                    <td>#91b493</td>
+                    <td>USUAO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #808f7c;"></div>
+                    </td>
+                    <td>#808f7c</td>
+                    <td>YANAGINEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #1b813e;"></div>
+                    </td>
+                    <td>#1b813e</td>
+                    <td>TOKIWA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #5dac81;"></div>
+                    </td>
+                    <td>#5dac81</td>
+                    <td>WAKATAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #36563c;"></div>
+                    </td>
+                    <td>#36563c</td>
+                    <td>CHITOSEMIDORI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #227d51;"></div>
+                    </td>
+                    <td>#227d51</td>
+                    <td>MIDORI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a8d8b9;"></div>
+                    </td>
+                    <td>#a8d8b9</td>
+                    <td>BYAKUROKU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6a8372;"></div>
+                    </td>
+                    <td>#6a8372</td>
+                    <td>OITAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #2d6d4b;"></div>
+                    </td>
+                    <td>#2d6d4b</td>
+                    <td>TOKUSA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #465d4c;"></div>
+                    </td>
+                    <td>#465d4c</td>
+                    <td>ONANDOCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #24936e;"></div>
+                    </td>
+                    <td>#24936e</td>
+                    <td>ROKUSYOH</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #86a697;"></div>
+                    </td>
+                    <td>#86a697</td>
+                    <td>SABISEIJI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #00896c;"></div>
+                    </td>
+                    <td>#00896c</td>
+                    <td>AOTAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #096148;"></div>
+                    </td>
+                    <td>#096148</td>
+                    <td>VELUDO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #20604f;"></div>
+                    </td>
+                    <td>#20604f</td>
+                    <td>MUSHIAO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #0f4c3a;"></div>
+                    </td>
+                    <td>#0f4c3a</td>
+                    <td>AIMIRUCHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #4f726c;"></div>
+                    </td>
+                    <td>#4f726c</td>
+                    <td>TONOCHA2</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #00aa90;"></div>
+                    </td>
+                    <td>#00aa90</td>
+                    <td>AOMIDORI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #69b0ac;"></div>
+                    </td>
+                    <td>#69b0ac</td>
+                    <td>SEIJI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #26453d;"></div>
+                    </td>
+                    <td>#26453d</td>
+                    <td>TETSU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #66bab7;"></div>
+                    </td>
+                    <td>#66bab7</td>
+                    <td>MIZUASAGI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #268785;"></div>
+                    </td>
+                    <td>#268785</td>
+                    <td>SEIHEKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #405b55;"></div>
+                    </td>
+                    <td>#405b55</td>
+                    <td>SABITETSUONANDO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #305a56;"></div>
+                    </td>
+                    <td>#305a56</td>
+                    <td>KORAINANDO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #78c2c4;"></div>
+                    </td>
+                    <td>#78c2c4</td>
+                    <td>BYAKUGUN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #376b6d;"></div>
+                    </td>
+                    <td>#376b6d</td>
+                    <td>OMESHICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a5dee4;"></div>
+                    </td>
+                    <td>#a5dee4</td>
+                    <td>KAMENOZOKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #77969a;"></div>
+                    </td>
+                    <td>#77969a</td>
+                    <td>FUKAGAWANEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6699a1;"></div>
+                    </td>
+                    <td>#6699a1</td>
+                    <td>SABIASAGI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #81c7d4;"></div>
+                    </td>
+                    <td>#81c7d4</td>
+                    <td>MIZU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #33a6b8;"></div>
+                    </td>
+                    <td>#33a6b8</td>
+                    <td>ASAGI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #0c4842;"></div>
+                    </td>
+                    <td>#0c4842</td>
+                    <td>ONANDO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #0d5661;"></div>
+                    </td>
+                    <td>#0d5661</td>
+                    <td>AI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #0089a7;"></div>
+                    </td>
+                    <td>#0089a7</td>
+                    <td>SHINBASHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #336774;"></div>
+                    </td>
+                    <td>#336774</td>
+                    <td>SABIONANDO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #255359;"></div>
+                    </td>
+                    <td>#255359</td>
+                    <td>TETSUONANDO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #1e88a8;"></div>
+                    </td>
+                    <td>#1e88a8</td>
+                    <td>HANAASAGI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #566c73;"></div>
+                    </td>
+                    <td>#566c73</td>
+                    <td>AINEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #577c8a;"></div>
+                    </td>
+                    <td>#577c8a</td>
+                    <td>MASUHANA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #58b2dc;"></div>
+                    </td>
+                    <td>#58b2dc</td>
+                    <td>SORA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #2b5f75;"></div>
+                    </td>
+                    <td>#2b5f75</td>
+                    <td>NOSHIMEHANA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #3a8fb7;"></div>
+                    </td>
+                    <td>#3a8fb7</td>
+                    <td>CHIGUSA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #2e5c6e;"></div>
+                    </td>
+                    <td>#2e5c6e</td>
+                    <td>OMESHIONANDO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #006284;"></div>
+                    </td>
+                    <td>#006284</td>
+                    <td>HANADA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #7db9de;"></div>
+                    </td>
+                    <td>#7db9de</td>
+                    <td>WASURENAGUSA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #51a8dd;"></div>
+                    </td>
+                    <td>#51a8dd</td>
+                    <td>GUNJYO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #2ea9df;"></div>
+                    </td>
+                    <td>#2ea9df</td>
+                    <td>TSUYUKUSA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #0b1013;"></div>
+                    </td>
+                    <td>#0b1013</td>
+                    <td>KUROTSURUBAMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #0f2540;"></div>
+                    </td>
+                    <td>#0f2540</td>
+                    <td>KON</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #08192d;"></div>
+                    </td>
+                    <td>#08192d</td>
+                    <td>KACHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #005caf;"></div>
+                    </td>
+                    <td>#005caf</td>
+                    <td>RURI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #0b346e;"></div>
+                    </td>
+                    <td>#0b346e</td>
+                    <td>RURIKON</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #7b90d2;"></div>
+                    </td>
+                    <td>#7b90d2</td>
+                    <td>BENIMIDORI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6e75a4;"></div>
+                    </td>
+                    <td>#6e75a4</td>
+                    <td>FUJINEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #261e47;"></div>
+                    </td>
+                    <td>#261e47</td>
+                    <td>TETSUKON</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #113285;"></div>
+                    </td>
+                    <td>#113285</td>
+                    <td>KONJYO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #4e4f97;"></div>
+                    </td>
+                    <td>#4e4f97</td>
+                    <td>BENIKAKEHANA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #211e55;"></div>
+                    </td>
+                    <td>#211e55</td>
+                    <td>KONKIKYO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #8b81c3;"></div>
+                    </td>
+                    <td>#8b81c3</td>
+                    <td>FUJI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #70649a;"></div>
+                    </td>
+                    <td>#70649a</td>
+                    <td>FUTAAI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #9b90c2;"></div>
+                    </td>
+                    <td>#9b90c2</td>
+                    <td>OUCHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #8a6bbe;"></div>
+                    </td>
+                    <td>#8a6bbe</td>
+                    <td>FUJIMURASAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6a4c9c;"></div>
+                    </td>
+                    <td>#6a4c9c</td>
+                    <td>KIKYO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #8f77b5;"></div>
+                    </td>
+                    <td>#8f77b5</td>
+                    <td>SHION</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #533d5b;"></div>
+                    </td>
+                    <td>#533d5b</td>
+                    <td>MESSHI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b28fce;"></div>
+                    </td>
+                    <td>#b28fce</td>
+                    <td>USU</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #986db2;"></div>
+                    </td>
+                    <td>#986db2</td>
+                    <td>HASHITA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #77428d;"></div>
+                    </td>
+                    <td>#77428d</td>
+                    <td>EDOMURASAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #3c2f41;"></div>
+                    </td>
+                    <td>#3c2f41</td>
+                    <td>SHIKON</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #4a225d;"></div>
+                    </td>
+                    <td>#4a225d</td>
+                    <td>KOKIMURASAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #66327c;"></div>
+                    </td>
+                    <td>#66327c</td>
+                    <td>SUMIRE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #592c63;"></div>
+                    </td>
+                    <td>#592c63</td>
+                    <td>MURASAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6f3381;"></div>
+                    </td>
+                    <td>#6f3381</td>
+                    <td>AYAME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #574c57;"></div>
+                    </td>
+                    <td>#574c57</td>
+                    <td>FUJISUSUTAKE</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #b481bb;"></div>
+                    </td>
+                    <td>#b481bb</td>
+                    <td>BENIFUJI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #3f2b36;"></div>
+                    </td>
+                    <td>#3f2b36</td>
+                    <td>KUROBENI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #572a3f;"></div>
+                    </td>
+                    <td>#572a3f</td>
+                    <td>NASUKON</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #5e3d50;"></div>
+                    </td>
+                    <td>#5e3d50</td>
+                    <td>BUDOHNEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #72636e;"></div>
+                    </td>
+                    <td>#72636e</td>
+                    <td>HATOBANEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #622954;"></div>
+                    </td>
+                    <td>#622954</td>
+                    <td>KAKITSUBATA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #6d2e5b;"></div>
+                    </td>
+                    <td>#6d2e5b</td>
+                    <td>EBIZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #c1328e;"></div>
+                    </td>
+                    <td>#c1328e</td>
+                    <td>BOTAN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #a8497a;"></div>
+                    </td>
+                    <td>#a8497a</td>
+                    <td>UMEMURASAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #562e37;"></div>
+                    </td>
+                    <td>#562e37</td>
+                    <td>NISEMURASAKI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #e03c8a;"></div>
+                    </td>
+                    <td>#e03c8a</td>
+                    <td>TSUTSUJI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #60373e;"></div>
+                    </td>
+                    <td>#60373e</td>
+                    <td>MURASAKITOBI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #fcfaf2;"></div>
+                    </td>
+                    <td>#fcfaf2</td>
+                    <td>SHIRONERI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #fffffb;"></div>
+                    </td>
+                    <td>#fffffb</td>
+                    <td>GOFUN</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #bdc0ba;"></div>
+                    </td>
+                    <td>#bdc0ba</td>
+                    <td>SHIRONEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #91989f;"></div>
+                    </td>
+                    <td>#91989f</td>
+                    <td>GINNEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #787878;"></div>
+                    </td>
+                    <td>#787878</td>
+                    <td>NAMARI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #828282;"></div>
+                    </td>
+                    <td>#828282</td>
+                    <td>HAI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #787d7b;"></div>
+                    </td>
+                    <td>#787d7b</td>
+                    <td>SUNEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #707c74;"></div>
+                    </td>
+                    <td>#707c74</td>
+                    <td>RIKYUNEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #656765;"></div>
+                    </td>
+                    <td>#656765</td>
+                    <td>NIBI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #535953;"></div>
+                    </td>
+                    <td>#535953</td>
+                    <td>AONIBI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #4f4f48;"></div>
+                    </td>
+                    <td>#4f4f48</td>
+                    <td>DOBUNEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #52433d;"></div>
+                    </td>
+                    <td>#52433d</td>
+                    <td>BENIKESHINEZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #373c38;"></div>
+                    </td>
+                    <td>#373c38</td>
+                    <td>AISUMICHA</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #3a3226;"></div>
+                    </td>
+                    <td>#3a3226</td>
+                    <td>BINROJIZOME</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #434343;"></div>
+                    </td>
+                    <td>#434343</td>
+                    <td>KESHIZUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #1c1c1c;"></div>
+                    </td>
+                    <td>#1c1c1c</td>
+                    <td>SUMI</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #080808;"></div>
+                    </td>
+                    <td>#080808</td>
+                    <td>KURO</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <div class="color" style="background-color: #0c0c0c;"></div>
+                    </td>
+                    <td>#0c0c0c</td>
+                    <td>RO</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </section>
+          
+        </article>
+
+        <footer class="footer">
+          <div class="container text-center py-5">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Copyright © 2022 P'Min. All rights reserved.</small>
+            <ul class="social-list list-unstyled pt-4 mb-0">
+              <li class="list-inline-item"><a href="https://github.com/PMinn/"><i class="fab fa-github fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/min.developer/"><i class="fab fa-instagram fa-fw"></i></a></li>
+            </ul>
+            <!--//social-list-->
+          </div>
+        </footer>
+      </div>
+    </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  <!--//docs-wrapper-->
+
+
+  <!-- Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+  <!-- Page Specific JS -->
+  <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script src="assets/js/highlight-custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gumshoe/5.1.1/gumshoe.polyfills.min.js"></script>
+  <script src="assets/js/docs.js"></script>
+
 </body>
 
 </html>

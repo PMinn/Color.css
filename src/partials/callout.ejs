@@ -1,0 +1,19 @@
+<div class="callout-block callout-block-<%- type -%> me-1">
+  <div class="content">
+    <h4 class="callout-title">
+      <span class="callout-icon-holder me-1">
+        <% if(type=="info") { %>
+        <i class="fas fa-info-circle"></i> Note
+        <% } else if(type=="warning") { %>
+        <i class="fas fa-bullhorn"></i> Warning
+        <% } else if(type=="success") { %>
+        <i class="fas fa-thumbs-up"></i> Tip
+        <% } else if(type=="danger") { %>
+        <i class="fas fa-exclamation-triangle"></i> Danger
+        <% }%>
+      </span>
+    </h4>
+    <p><%= inner %></p>
+  </div>
+  <!--//content-->
+</div>

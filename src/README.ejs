@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./image/Logo.svg" style="width:40%;">
+<img src="./icons/Logo.svg" style="width:40%;">
 </p>
 <h3 align="center">Color.css</h3>
 <p align="center">
