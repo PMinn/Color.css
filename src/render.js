@@ -28,9 +28,15 @@ function renderGetStartedHTML() {
     });
 }
 
+function renderREADME() {
+    ejs.renderFile('./README.ejs', { data }, {}, function (err, html) {
+        fs.writeFileSync(`../README.md`, html, 'utf8');
+    });
+}
+
 const data = JSON.parse(fs.readFileSync('../data.json'));
 const nav = data.map(c => ({ id: c.id, name: c.name }));
-console.log(data);
+// console.log(data);
 data.forEach(color => {
     try {
         renderColorCSS(color.id, color.data);
@@ -42,3 +48,4 @@ data.forEach(color => {
 
 renderIndexHTML();
 renderGetStartedHTML();
+renderREADME();

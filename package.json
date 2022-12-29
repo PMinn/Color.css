@@ -7,7 +7,7 @@
     "ejs": "^3.1.8"
   },
   "scripts": {
-    "build": "cd src && node render.js"
+    "render": "cd src && node render.js"
   },
   "repository": {
     "type": "git",

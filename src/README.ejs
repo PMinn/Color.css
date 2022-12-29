@@ -1,0 +1,56 @@
+<p align="center">
+<img src="./image/Logo.svg" style="width:40%;">
+</p>
+<h3 align="center">Color.css</h3>
+<p align="center">
+Sleek, and intuitive front-end CSS for faster and easier web development.
+</p>
+
+<br>
+
+## Table of contents
+- [Table of contents](#table-of-contents)
+- [Usage](#usage)
+- [Types of colors](#types-of-colors)
+<% data.forEach(color => { -%>
+- [<%- color.name -%> Colors](#<%- color.id -%>-colors)
+<% }) -%>
+
+## Usage
+Use CSS variables `var(--{ColorName})`
+```
+<div style="width:50px;height:50px;background-color:var(--NADESHIKO);">
+```
+
+## Types of colors
+
+<% data.forEach(color => { -%>
+
+### <em><%- color.name -%> Colors</em>
+
+Include <%- color.name -%> Colors cdn in your website like this:
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PMinn/Color.css/src/<%- color.id -%>.css">
+```
+
+find the color you need, and use like [Usage](#usage)
+
+<table>
+    <thead>
+        <tr>
+            <th>Color</th>
+            <th>Hex</th>
+            <th>ColorName</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% color.data.forEach(c => { -%>
+        <tr>
+            <td><img src="./image/<%- c.name.en -%>.png"></td>
+            <td><%- c.color -%></td>
+            <td><%- c.name.en -%></td>
+        </tr>
+    <% }) -%>
+    </tbody>
+</table>
+<% }) -%>
